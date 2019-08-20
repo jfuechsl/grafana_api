@@ -1,5 +1,6 @@
 from .base import Base
 from .admin import Admin
+from .alerting import Alerting
 from .dashboard import Dashboard
 from .datasource import Datasource
 from .folder import Folder

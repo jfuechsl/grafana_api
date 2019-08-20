@@ -1,6 +1,7 @@
 from .grafana_api import GrafanaAPI
 from .api import (
     Admin,
+    Alerting,
     Dashboard,
     Datasource,
     Folder,
@@ -34,6 +35,7 @@ class GrafanaFace:
             verify=verify,
         )
         self.admin = Admin(self.api)
+        self.alerting = Alerting(self.api)
         self.dashboard = Dashboard(self.api)
         self.datasource = Datasource(self.api)
         self.folder = Folder(self.api)
